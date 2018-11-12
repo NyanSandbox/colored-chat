@@ -1,0 +1,97 @@
+name: ColoredChat
+main: me.nyanguymf.ColoredChat
+version: 1
+author: NyanGuyMF
+permissions:
+  color.*:
+    description: Allows type with all colors
+    default: false
+    children:
+      color.0: true
+      color.1: true
+      color.2: true
+      color.3: true
+      color.4: true
+      color.5: true
+      color.6: true
+      color.7: true
+      color.8: true
+      color.9: true
+      color.a: true
+      color.b: true
+      color.c: true
+      color.d: true
+      color.e: true
+      color.f: true
+  color.0:
+    description: Allows type with BLACK color
+    default: false
+  color.1:
+    description: Allows type with DARK_BLUE color
+    default: false
+  color.2:
+    description: Allows type with DARK_GREEN color
+    default: false
+  color.3:
+    description: Allows type with DARK_AQUA color
+    default: false
+  color.4:
+    description: Allows type with DARK_RED color
+    default: false
+  color.5:
+    description: Allows type with DARK_PURPLE color
+    default: false
+  color.6:
+    description: Allows type with GOLD color
+    default: false
+  color.7:
+    description: Allows type with GRAY color
+    default: false
+  color.8:
+    description: Allows type with DARK_GRAY color
+    default: false
+  color.9:
+    description: Allows type with BLACK color
+    default: false
+  color.a:
+    description: Allows type with GREEN color
+    default: false
+  color.b:
+    description: Allows type with LIGHT_BLUE color
+    default: false
+  color.c:
+    description: Allows type with RED color
+    default: false
+  color.d:
+    description: Allows type with LIGHT_PURPLE color
+    default: false
+  color.e:
+    description: Allows type with YELLOW color
+    default: false
+  color.f:
+    description: Allows type with WHITE color
+    default: false
+  font.*:
+    description: Allows type with all fonts
+    default: false
+    children:
+      font.k: true
+      font.l: true
+      font.m: true
+      font.n: true
+      font.o: true
+  font.k:
+    description: Allows type with MAGIC font
+    default: false
+  font.l:
+    description: Allows type with BOLD font
+    default: false
+  font.m:
+    description: Allows type with STRIKETHROUGH font
+    default: false
+  font.n:
+    description: Allows type with UNDERLINE font
+    default: false
+  font.o:
+    description: Allows type with ITALIC font
+    default: false
