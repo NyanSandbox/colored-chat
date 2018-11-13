@@ -48,16 +48,16 @@ public class MessagesListener implements Listener {
     }
     
     private String parseFonts(String message) {
-        for (char color = 'k'; color <= 'o' ; color++) {
-            if (message.contains("&" + color)) {
-                if (hasPermissionForFont(color)) {
+        for (char font = 'k', fontUp = 'K'; font <= 'o' ; font++, fontUp++) {
+            if (message.contains("&" + font) || message.contains("&" + fontUp)) {
+                if (hasPermissionForFont(font)) {
                     message = message.replace("&", "\u00a7");
                 }
                 else {
                     event.setCancelled(true);
                     sender.sendMessage(
                             ChatColor.DARK_RED + "У Вас не прав писать \u00a7"
-                            + color + "этим\u00a74 шрифтом");
+                            + font + "этим\u00a74 шрифтом");
                     return message;
                 }
             }
@@ -66,8 +66,8 @@ public class MessagesListener implements Listener {
     }
 
     private String parseCharColor(String message) {
-        for (char color = 'a'; color <= 'f' ; color++) {
-            if (message.contains("&" + color)) {
+        for (char color = 'a', colorUp = 'A'; color <= 'f'; color++, colorUp++) {
+            if (message.contains("&" + color) || message.contains("&" + colorUp)) {
                 if (hasPermissionForColor(color)) {
                     message = message.replace("&", "\u00a7");
                 }
